@@ -19,7 +19,8 @@ func main() {
 	// start a libp2p node that listens on a random local TCP port,
 	// but without running the built-in ping protocol
 	node, err := libp2p.New(ctx,
-		libp2p.ListenAddrStrings("/ip4/127.0.0.1/tcp/1234"),
+		libp2p.ListenAddrStrings("/ip4/192.168.43.192/tcp/55555"),
+		// 192.168.43.124
 	)
 	if err != nil {
 		panic(err)
